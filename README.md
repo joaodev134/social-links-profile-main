@@ -7,3 +7,9 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 Users should be able to:
 
 - See hover on "HTML & CSS foundations
+
+### Acess the page
+
+You can acess the page via the link below. / Você pode acessar a página pelo link abaixo.
+
+- https://joaodev134.github.io/social-links-profile-main/
