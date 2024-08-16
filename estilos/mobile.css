@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Cores */
+
+    --Green: hsl(75, 94%, 57%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+
+    /* Fonte */
+
+    --font: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: var(--Grey900);
+        height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        background-color: var(--Grey800);
+        border-radius: 10px;
+        margin: auto;
+        width: 90%;
+        max-width: 350px;
+        display: flex;
+        flex-flow: column nowrap;
+        font-family: var(--font);
+        padding-bottom: 10px;
+    }
+
+    main > article > img {
+        border-radius: 50%;
+        width: 70px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    main > article > h1 {
+        color: var(--White);
+        text-align: center;
+        font-weight: 700;
+    }
+
+    main > article > p#p1 {
+        color: var(--Green);
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    main > article > p#p2 {
+        text-align: center;
+        color: var(--White);
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    main > button {
+        width: 90%;
+        margin: 10px auto;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: var(--Grey700);
+        border: none;
+    }
+
+    main > button:hover {
+        background-color: var(--Green);
+        cursor: pointer;
+    }
+
+    main > button:hover > a {
+        color: var(--Grey900);
+        font-weight: 700;
+    }
+
+    main > button > a {
+        color: var(--White);
+        text-decoration: none;
+        font-weight: 700;
+        font-family: var(--font);
+    }
+
+    div.attribution {
+        font-size: 15px;
+        text-align: center;
+        color: var(--White);
+    }
+ 
+    div.attribution > a {
+        color: hsl(228, 45%, 44%);
+    }
+}
